@@ -21,6 +21,7 @@ import Line from "./scenes/line";
 import Pie from "./scenes/pie";
 import Level from "./scenes/level";
 import Kategori from "./scenes/kategori";
+import ManualTransactionForm from "./scenes/transaksi";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -45,6 +46,7 @@ function App() {
               <Route path="/edit-produk/:id" element={<EditProduk />} />
               <Route path="/tambah-produk" element={<AddProduk />} />
               <Route path="/transaction" element={<Contacts />} />
+              <Route path="/transaksi-manual" element={<ManualTransactionForm />} />
               <Route path="/kategori" element={<Kategori />} />
               <Route path="/bar" element={<Bar />} />
               <Route path="/pie" element={<Pie />} />

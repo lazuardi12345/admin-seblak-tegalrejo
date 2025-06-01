@@ -14,6 +14,7 @@ import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import Inventory2OutlinedIcon from "@mui/icons-material/Inventory2Outlined";
 import CategoryIcon from "@mui/icons-material/Category";
+import AddShoppingCartOutlinedIcon from '@mui/icons-material/AddShoppingCartOutlined';
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -133,6 +134,7 @@ const Sidebar = () => {
             </Typography>
             <Item title="Data Produk" to="/produk" icon={<Inventory2OutlinedIcon />} selected={selected} setSelected={setSelected} />
             <Item title="Data Transaksi" to="/transaction" icon={<ReceiptOutlinedIcon />} selected={selected} setSelected={setSelected} />
+            <Item title="Transaksi Manual" to="/transaksi-manual" icon={<AddShoppingCartOutlinedIcon />} selected={selected} setSelected={setSelected} />
 
             <Typography variant="h6" color={colors.grey[300]} sx={{ m: "15px 0 5px 20px" }}>
               Fitur
